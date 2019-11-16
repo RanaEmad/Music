@@ -2,7 +2,9 @@ package com.example.android.music;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ListView;
 
 import java.util.ArrayList;
@@ -22,5 +24,10 @@ public class MainActivity extends AppCompatActivity {
         ListView listView=(ListView) findViewById(R.id.listview_song);
         listView.setAdapter(songAd);
 
+    }
+
+    public void openSong(View view) {
+        Intent songIntent = new Intent(this, SongActivity.class);
+       startActivity(songIntent);
     }
 }
