@@ -12,7 +12,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        ArrayList<String> songs= new ArrayList<String>();
-        songs.add("Song 1");
+        ArrayList<Song> songs= new ArrayList<Song>();
+        songs.add(new Song("Song 1","Artist 1"));
     }
 }
