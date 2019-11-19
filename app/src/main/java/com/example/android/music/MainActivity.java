@@ -19,8 +19,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         final ArrayList<Song> songs= new ArrayList<Song>();
-        songs.add(new Song("Song 1","Artist 1"));
-        songs.add(new Song("Song 2","Artist 2"));
+        songs.add(new Song("Yellow Submarine","The Beatles"));
+        songs.add(new Song("Don't Stop Me Now","Queen"));
 
         SongAdaptor songAd= new SongAdaptor(this,songs);
 
@@ -40,8 +40,4 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void openSong(View view) {
-        Intent songIntent = new Intent(this, SongActivity.class);
-       startActivity(songIntent);
-    }
 }
